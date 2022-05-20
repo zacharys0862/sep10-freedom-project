@@ -2,6 +2,23 @@
     text-align: center;
 }
 
-.body{
+.bdy{
     background-color: #d4d4d4;
+}
+
+.card{
+    padding: 10px;
+    margin: 10px;
+}
+
+.tex{
+    padding: 50px;
+}
+
+.tzez{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     padding: 30px;
 }

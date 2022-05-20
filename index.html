@@ -1,9 +1,13 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="style.css" rel="stylesheet" type="text/css"/>    
@@ -11,12 +15,28 @@
     </head>
     
 <style>
-    
+
+  .title{
+    animation: fadeInDown;
+    animation-duration: 2s;
+  }
+  
+  .tex{
+    animation: fadeInDown;
+    animation-duration: 2s;
+  }
+  
+  .card{
+    animation: fadeInUP;
+    animation-duration: 2s;
+  }
 </style>
 
 <body>
   
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="bdy">
+  
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Car Tech</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,83 +45,74 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Future of Cars</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Innovations
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Innovation</a></li>
-            <li><a class="dropdown-item" href="#">Innovation</a></li>
-            <li><a class="dropdown-item" href="#">Innovation</a></li>
-          </ul>
+          <a class="nav-link active" href="ct">Car Tech</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<h1 class="title">Car Technology</h1>
+<h1 class="title" id="ct">Car Technology</h1>
 
-<p>Cars have been around 1886 so we have had cars for almost a century and a half. Ever since the first car there has constantly been new innovations. From electric cars to computer chips inside of cars theres always been something brand new to improve on cars. </p>
+<p class="tex">Cars have been around 1886 so we have had cars for almost a century and a half. Ever since the first car there has constantly been new innovations. From electric cars to computer chips inside of cars theres always been something brand new to improve on cars. This website will show off some of those innations and even addresses a problem that still exists today with my own innovaiton.</p>
 
+<h1 class="title">Innovations</h1>
 
 <div class="container">
   <div class="row">
     <div class="col">
         <div class="card" style="width: 18rem;">
+        <img src="imgs/maxxecu.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">MaxxECU</h5>
           <p class="card-text">MaxxECU is a car tuning software that connects to a usb that connects to your car's computer to change certain things about the car. They have different types of plugin ECUs for different types of car models.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
         </div>
     </div>
     <div class="col">
         <div class="card" style="width: 18rem;">
+        <img src="imgs/insideatezlers.jpeg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Tesla Model S Plaid Touchscreen</h5>
           <p class="card-text">Touchscreens in cars are not something by a specific brand but they have been evolving as time goes on. Like in the Tesla Model S Plaid that has
             literally all of its controls on the center screen. It controls the whole car. Things that would usually be acessable through buttons on the car like the air conditioning and windshield wipers.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
         </div>
     </div>
     <div class="col">
         <div class="card" style="width: 18rem;">
+        <img src="imgs/tezlercard.jpeg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Tesla Keycard</h5>
           <p class="card-text">Tesla has a card that will open your car for you. It works by tapping the card on the side of your car.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
         </div>
     </div>
     <div class="col">
         <div class="card" style="width: 18rem;">
+        <img src="imgs/rearaxle.jpg" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Rear Axle Turning</h5>
-          <p class="card-text">There are some cars that have rear axle turning so that it can make sharper turns. This works by making the rear wheels turn in the opposite direction of what the front wheels are turning.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">Rear Axle steering</h5>
+          <p class="card-text">There are some cars that have rear axle steering so that it can make sharper turns. This works by making the rear wheels turn in the opposite direction of what the front wheels are turning.</p>
         </div>
         </div>
     </div>
     <div class="col">
         <div class="card" style="width: 18rem;">
+        <img src="imgs/obd2.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">OBD2 Scanner</h5>
           <p class="card-text">OBD2 scanners plug into your car in order to run a diagnostic to see what is wrong with them. It checks the error codes and </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
         </div>
     </div>
     <div class="col">
         <div class="card" style="width: 18rem;">
+        <img src="imgs/freevalve.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Freevalve</h5>
           <p class="card-text">The camless engine or “Freevalve” is a way that a car can have more power as well as less pollution. This engine uses electronically controlled vavles
           and has more MPG.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
         </div>
     </div>
@@ -109,12 +120,19 @@
 
 
 
+</div>
 
+<div class="container-sm">
+  <div class="row">
+    <div class="col">
+      <img src="imgs/tezler.jpg" class="tzez">
+    </div>
+  </div>
+</div>
+    
+<h1 class="title">My innovation: EcECU</h1>
 
-
-<img src="imgs/tezler.jpg">
-
-<h1 class="title">My innovation</h1>
+<p class="tex">As the world modernizes and makes the switch to electric cars to be more envieromentally friendly, there is one problem with these electric cars, they don't have much character! In a gas car, you have a shifter, the sound of your engine and some people find that dramatic, what makes a gas car great. Compared to an electric car, everything is automatic, you dont even have a shifter and the car is dead silent. So thats why my innovation is the EcECU, a software that can be installed directly into the car to tune it like a regular, kind of like the MaxxECU I mentioned in my innovations section.</p>
 
 </body>
 
